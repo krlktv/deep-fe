@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/", // The place where the project is built, but in my case it's not so important, because I build the project using a webpack
+    "noImplicitAny": true, // Highlights places where the type is not specified
+    "module": "ESNext", // Choosing a modular system
+    "target": "es5", // Which version will be compiled to, to support most browsers
+    "jsx": "react",
+    "allowJs": true, // Allows the compiler to process not only ts-files, but also js-files
+    "moduleResolution": "node", // Defines which imports will be (node/classic/modern). Used to configure how module resolution should be performed when importing modules in JavaScript
+    "esModuleInterop": true, // Allows to use regular imports and exports instead of require
+    "allowSyntheticDefaultImports": true // Allows to use regular imports without '* as' when the library doesn't have a default import
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS" // Fixes the 'Cannot use import statement outside a module' error
+    }
+  }
+}
