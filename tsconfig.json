@@ -7,6 +7,7 @@
     "jsx": "react",
     "allowJs": true, // Allows the compiler to process not only ts-files, but also js-files
     "moduleResolution": "node", // Defines which imports will be (node/classic/modern). Used to configure how module resolution should be performed when importing modules in JavaScript
+    // "baseUrl": ".", // For absolute import
     "esModuleInterop": true, // Allows to use regular imports and exports instead of require
     "allowSyntheticDefaultImports": true // Allows to use regular imports without '* as' when the library doesn't have a default import
   },
