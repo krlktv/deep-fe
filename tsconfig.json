@@ -4,7 +4,7 @@
     "noImplicitAny": true, // Highlights places where the type is not specified
     "module": "ESNext", // Choosing a modular system
     "target": "es5", // Which version will be compiled to, to support most browsers
-    "jsx": "react",
+    "jsx": "react-jsx", // 'react-jsx' removes the need to import React into each file
     "allowJs": true, // Allows the compiler to process not only ts-files, but also js-files
     "moduleResolution": "node", // Defines which imports will be (node/classic/modern). Used to configure how module resolution should be performed when importing modules in JavaScript
     // "baseUrl": ".", // For absolute import
