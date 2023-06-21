@@ -5,9 +5,9 @@ import { buildResolvers } from './buildResolvers';
 import { buildLoaders } from './buildloaders';
 import { BuildOptions } from './types/config';
 
-export function buildWebpackConfig(
+export const buildWebpackConfig = (
   options: BuildOptions
-): webpack.Configuration {
+): webpack.Configuration => {
   const { paths, mode, isDev } = options;
 
   return {
@@ -26,4 +26,4 @@ export function buildWebpackConfig(
     devtool: isDev ? 'inline-source-map' : undefined, // Add source map for development mode and remove otherwise
     devServer: isDev ? buildDevServer(options) : undefined,
   };
-}
+};
