@@ -22,7 +22,7 @@ export const buildWebpackConfig = (
     module: {
       rules: buildLoaders(options),
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
     devtool: isDev ? 'inline-source-map' : undefined, // Add source map for development mode and remove otherwise
     devServer: isDev ? buildDevServer(options) : undefined,
   };
