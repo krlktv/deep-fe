@@ -10,7 +10,8 @@
     "baseUrl": ".", // For absolute import
     "paths": { "*": ["./src/*"] }, // Specify where all absolute imports will come from
     "esModuleInterop": true, // Allows to use regular imports and exports instead of require
-    "allowSyntheticDefaultImports": true // Allows to use regular imports without '* as' when the library doesn't have a default import
+    "allowSyntheticDefaultImports": true, // Allows to use regular imports without '* as' when the library doesn't have a default import
+    "plugins": [{ "name": "typescript-plugin-css-modules" }] // Add types for styles
   },
   "ts-node": {
     "compilerOptions": {
