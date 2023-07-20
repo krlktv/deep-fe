@@ -8,7 +8,7 @@ const AppRouter = () => {
       <Routes>
         // An array of values from the routeConfig is required to be passed as props to routes
         {Object.values(routeConfig).map(({ element, path }) => (
-          <Route key={path} element={element} path={path} />
+          <Route key={path} element={<div className='pageWrapper'>{element}</div>} path={path} />
         ))}
       </Routes>
     </Suspense>
