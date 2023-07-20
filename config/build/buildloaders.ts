@@ -23,6 +23,20 @@ export const buildLoaders = ({ isDev }: BuildOptions): webpack.RuleSetRule[] => 
     ],
   };
 
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|woff|woff2)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
+  };
+
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  };
+
   // If don't use a TypeScript, then need to add a babel-loader
   const typescriptLoader = {
     test: /\.tsx?$/,
@@ -30,5 +44,5 @@ export const buildLoaders = ({ isDev }: BuildOptions): webpack.RuleSetRule[] => 
     exclude: /node_modules/,
   };
 
-  return [typescriptLoader, cssLoader];
+  return [cssLoader, fileLoader, svgLoader, typescriptLoader];
 };
