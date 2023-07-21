@@ -6,5 +6,6 @@ export const buildDevServer = (options: BuildOptions): DevServerConficuration =>
     port: options.port,
     open: true,
     historyApiFallback: true, // To process all requests that don't match existing files on the server and direct them to the same app page (for example, to the main page or to the router), which will handle routing on the client side
+    hot: true,
   };
 };
