@@ -8,11 +8,11 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
+  const { t, i18n } = useTranslation();
+
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === 'en' ? 'be' : 'en');
   };
-
-  const { t, i18n } = useTranslation();
 
   return (
     <Button onClick={toggleLanguage} theme={ThemeButton.CLEAR} className={classNames('', {}, [className])}>
