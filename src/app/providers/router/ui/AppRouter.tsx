@@ -6,7 +6,9 @@ const AppRouter = () => {
   return (
     <Suspense fallback={<div>... Loading ...</div>}>
       <Routes>
-        // An array of values from the routeConfig is required to be passed as props to routes
+        {
+          // An array of values from the routeConfig is required to be passed as props to routes
+        }
         {Object.values(routeConfig).map(({ element, path }) => (
           <Route key={path} element={<div className='pageWrapper'>{element}</div>} path={path} />
         ))}

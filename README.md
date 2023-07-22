@@ -21,6 +21,14 @@ The build is minified and the filenames include the hashes.
 
 Builds the app for development to the `build` folder.
 
+### `lint:ts`
+
+Runs ESLint and shows errors
+
+### `lint:ts:fix`
+
+Runs ESLint and fixs errors
+
 ## Add types for styles in VS Code
 
 To use this plugin with Visual Studio Code, you should set your workspace's version of TypeScript:
