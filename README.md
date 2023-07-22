@@ -29,6 +29,14 @@ Runs ESLint and shows errors
 
 Runs ESLint and fixs errors
 
+### `lint:scss`
+
+Runs Stylelint and shows errors
+
+### `lint:scss:fix`
+
+Runs Stylelint and fixs errors
+
 ## Add types for styles in VS Code
 
 To use this plugin with Visual Studio Code, you should set your workspace's version of TypeScript:
