@@ -33,6 +33,8 @@ const config: Config = {
   // The root directory that Jest should scan for tests and modules within
   rootDir: '../../',
 
+  modulePaths: ['<rootDir>src'],
+
   // The glob patterns Jest uses to detect test files
   testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
 
