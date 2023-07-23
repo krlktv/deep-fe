@@ -13,9 +13,9 @@ interface AppLinkProps extends LinkProps {
   theme?: AppLinkTheme;
 }
 
-// The Navbar component accepts an additional className prop if it's necessary to change styles from outside
 export const AppLink: FC<AppLinkProps> = ({ to, className, children, theme = AppLinkTheme.PRIMARY, ...otherProps }) => {
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <Link to={to} className={classNames(styles.appLink, {}, [className, styles[theme]])} {...otherProps}>
       {children}
     </Link>
