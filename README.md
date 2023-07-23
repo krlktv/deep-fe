@@ -21,21 +21,33 @@ The build is minified and the filenames include the hashes.
 
 Builds the app for development to the `build` folder.
 
-### `lint:ts`
+### `npm run lint`
+
+Runs ESLint and Stylelint, shows errors
+
+### `npm run lint:fix`
+
+Runs ESLint and Stylelint, fixs errors
+
+### `npm run lint:ts`
 
 Runs ESLint and shows errors
 
-### `lint:ts:fix`
+### `npm run lint:ts:fix`
 
 Runs ESLint and fixs errors
 
-### `lint:scss`
+### `npm run lint:scss`
 
 Runs Stylelint and shows errors
 
-### `lint:scss:fix`
+### `npm run lint:scss:fix`
 
 Runs Stylelint and fixs errors
+
+### `npm run unit`
+
+Runs tests
 
 ## Add types for styles in VS Code
 

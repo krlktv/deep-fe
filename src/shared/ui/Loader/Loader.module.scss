@@ -17,25 +17,25 @@
 
 .ldsEllipsis div:nth-child(1) {
   left: 8px;
-  animation: lds-ellipsis1 0.6s infinite;
+  animation: ldsEllipsis1 0.6s infinite;
 }
 
 .ldsEllipsis div:nth-child(2) {
   left: 8px;
-  animation: lds-ellipsis2 0.6s infinite;
+  animation: ldsEllipsis2 0.6s infinite;
 }
 
 .ldsEllipsis div:nth-child(3) {
   left: 32px;
-  animation: lds-ellipsis2 0.6s infinite;
+  animation: ldsEllipsis2 0.6s infinite;
 }
 
 .ldsEllipsis div:nth-child(4) {
   left: 56px;
-  animation: lds-ellipsis3 0.6s infinite;
+  animation: ldsEllipsis3 0.6s infinite;
 }
 
-@keyframes lds-ellipsis1 {
+@keyframes ldsEllipsis1 {
   0% {
     transform: scale(0);
   }
@@ -45,7 +45,7 @@
   }
 }
 
-@keyframes lds-ellipsis3 {
+@keyframes ldsEllipsis3 {
   0% {
     transform: scale(1);
   }
@@ -55,7 +55,7 @@
   }
 }
 
-@keyframes lds-ellipsis2 {
+@keyframes ldsEllipsis2 {
   0% {
     transform: translate(0, 0);
   }
